@@ -5,6 +5,7 @@
   <body>
     {%block content%}
     <br>
+    <br>
     {%include 'header.html'%}
     <div class="container">
     <br>
@@ -25,15 +26,11 @@
     {%for pro_item in pro%}
     <div class="col-md-4">
       <div class="card" style="width: 20rem;">
-    <img class="card-img-top" src="{{ pro_item.image.url }}" alt="Card image cap height="300px" width="300px">
+    <a href="{{ pro_item.deployed_link }}"><img class="card-img-top" src="{{ pro_item.image.url }}" alt=Card image cap height="300px" width="300px"></a>
     <div class="card-body">
       <h3 class="card-title"><a href="">{{ project_item.user }}</a></h3>
       <h3 class="card-title">{{ pro_item.title }}</h3>
       <p class="card-text">{{ pro_item.description |safe}}</p>
-      <div class="row">
-      <a href="{{ pro_item.github_link }}" class="btn btn-primary">Github Link</a>
-      <a href="{{ pro_item.deployed_link }}" class="btn btn-primary">Deployed Link</a>
-    </div>
     </div>
     </div>
     </div>
