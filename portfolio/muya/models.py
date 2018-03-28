@@ -4,7 +4,7 @@ from tinymce.models import HTMLField
 
 
 # Create your models here.
-class profile(models.Model):
+class Project(models.Model):
     user = models.ForeignKey(User, null = True)
     title = models.CharField(max_length = 40)
     image = models.ImageField(upload_to = 'post/')
@@ -15,11 +15,11 @@ class profile(models.Model):
     def __str__(self):
         return self.title
 
-    def save_post(self):
+    def save_project(self):
             self.save
 
 # method to call objects from the database
     @classmethod
-    def this_post(cls):
-        project = cls.objects.all()
-        return project
+    def this_project(cls):
+        pro = cls.objects.all()
+        return pro
