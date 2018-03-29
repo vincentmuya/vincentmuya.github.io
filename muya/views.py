@@ -10,5 +10,10 @@ def index(request):
     return render(request, "index.html", {"pro":pro})
 
 def footer(request):
-    form = FeedbackForm()
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect('/thanks/')
+    else:
+        form = FeedbackForm()
     return render(request, "footer.html", {"form":form})
