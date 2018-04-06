@@ -11,13 +11,14 @@
               <div class="footer-title m-t-5 m-b-20 p-b-8">
                 Questions And Feedback
               </div>
-              {% for field in form %}
               <form method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit" />
+                <p>Email</p>
+            <input type="text" name="" value="">
+            <p>Question,Feedback or Enquiries </p>
+            <textarea name="name" rows="4" cols="50"></textarea>
+            <br>
+            <button class="btn btn-primary" name="button">Send</button>
         </form>
-      {% endfor %}
 
 
             </div>
@@ -27,8 +28,8 @@
               </div>
               <div class="footer-links">
                 <p><i class="fa fa-home mr-3"></i> Nairobi, Kenya</p>
-                <p><i class="fa fa-envelope mr-3"></i>vincentmuya13@gmail.com</p>
-              <a href="https://github.com/vincentmuya"><p><i class="fa fa-github mr-3"></i>Github account</p></a>
+                <p><i class="fa fa-envelope mr-3"></i> vincentmuya13@gmail.com</p>
+              <a href="https://github.com/vincentmuya"><p><i class="fa fa-github mr-3"></i> Github account</p></a>
               </div>
             </div>
           </div>
@@ -43,7 +44,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 <style media="screen">
   /* f. Footer section */
-
   .footer {
     padding: 60px 0;
     width: 100%;
