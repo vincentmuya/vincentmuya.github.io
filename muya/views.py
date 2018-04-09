@@ -13,7 +13,7 @@ def footer(request):
     if request.method == 'POST':
         form = FeedbackForm(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect('/thanks/')
+            print('valid')
     else:
         form = FeedbackForm()
-    return render(request, "footer.html", {"form":form})
+    return render(request, "footer.html", {"feedbackForm":form})

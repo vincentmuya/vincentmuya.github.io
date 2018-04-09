@@ -4,8 +4,6 @@
     <meta charset="utf-8">
   </head>
   <body>
-
-
       <h2 style="text-align:center;">About me</h2>
       <!-- <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3> -->
       <h3>Hello! I am Vincent Muya,you can call me Vinny,I am based in Nairobi,Kenya but I call many places home.I love outdoor activities and socializing.<br>I am a software engineer who loves designing, programming, documenting, testing and bug fixing involved in creating and maintaining applications, frameworks, or other software components. </h3>
@@ -43,22 +41,48 @@
     <section id="projects">
         <h2 style="text-align:center;">My Projects</h2>
     <div class="row">
-      {%for pro_item in pro%}
       <div class="col-md-4">
         <div class="card" style="width: 20rem;">
-          <a href="{{ pro_item.deployed_link }}" target="_blank"><img class="card-img-top" src="{{ pro_item.image.url }}" alt=Card image cap height="250px" width="300px"></a>
+          <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><img class="card-img-top" src="/static/img/pigdice.png" alt=Card image cap height="200px" width="250px"></a>
           <div class="card-body">
-            <h3 class="card-title"><a href="">{{ project_item.user }}</a></h3>
-            <h3 class="card-title">{{ pro_item.title }}</h3>
-            <p class="card-text">{{ pro_item.description |safe}}</p>
+            <h3 class="card-title">Pig Dice</h3>
+            <p class="card-text">Digital dice game</p>
             <div class="row">
-              <a href="{{ pro_item.github_link }}" target="_blank"><button type="button" name="button">Github link</button></a>
-              <a href="{{ pro_item.deployed_link }}" target="_blank"><button type="button" name="button">Deployed link</button></a>
+              <a href="https://github.com/vincentmuya/Pig-dice" target="_blank"><button type="button" name="button">Github link</button></a>
+              <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><button type="button" name="button">Deployed link</button></a>
             </div>
           </div>
         </div>
       </div>
-      {%endfor%}
+
+      <div class="col-md-4">
+        <div class="card" style="width: 20rem;">
+          <a href="https://scorpus1.herokuapp.com/" target="_blank"><img class="card-img-top" src="/static/img/scorpus.png" alt=Card image cap height="200px" width="250px"></a>
+          <div class="card-body">
+            <h3 class="card-title">Scorpus Logistics Cargo</h3>
+            <p class="card-text">Its a website where a user can track their shipments</p>
+            <div class="row">
+              <a href="https://github.com/vincentmuya/scorpus" target="_blank"><button type="button" name="button">Github link</button></a>
+              <a href="https://scorpus1.herokuapp.com/" target="_blank"><button type="button" name="button">Deployed link</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 20rem;">
+          <a href="https://photolibrarysnap.herokuapp.com/" target="_blank"><img class="card-img-top" src="/static/img/photo.png" alt=Card image cap height="200px" width="250px"></a>
+          <div class="card-body">
+            <h3 class="card-title">Photo Library</h3>
+            <p class="card-text">Its a web application that allows you to show case your photos</p>
+            <div class="row">
+              <a href="https://github.com/vincentmuya/Gallery" target="_blank"><button type="button" name="button">Github link</button></a>
+              <a href="https://photolibrarysnap.herokuapp.com/" target="_blank"><button type="button" name="button">Deployed link</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     </section>
   </body>
@@ -66,8 +90,5 @@
 <style media="screen">
 ul{
   list-style-type: none;
-}
-h2{
-  font-family:
 }
 </style>
