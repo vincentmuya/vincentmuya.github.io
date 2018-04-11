@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns=[
     url(r'^$',views.index,name ='index'),
+    url(r'^ajax/feedback/$', views.feedback, name='feedback')
     ]
 
 
