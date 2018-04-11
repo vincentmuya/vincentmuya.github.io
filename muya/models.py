@@ -27,3 +27,6 @@ class Project(models.Model):
 class FeedbackRecipients(models.Model):
     email = models.EmailField()
     question_Feedback = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.email

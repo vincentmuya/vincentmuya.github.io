@@ -7,18 +7,6 @@
       <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 m-b-30">
-              <div class="footer-title m-t-5 m-b-20 p-b-8">
-                Questions And Feedback
-              </div>
-              <form method="post">
-                {% csrf_token %}
-                {{ form }}
-                <button class="btn btn-primary" type="submit">Submit</button>
-              </form>
-
-
-            </div>
             <div class="col-md-3 m-b-30">
               <div id='contact' class="footer-title m-t-5 m-b-20 p-b-8">
                 Contact Info
@@ -33,6 +21,22 @@
                   <p><i class="fa fa-linkedin mr-3"></i> Linkedin</p>
                 </a>
               </div>
+            </div>
+            <div class="col-md-2 m-b-30">
+              </div>
+            <div class="col-md-6 m-b-30">
+              <div class="footer-title m-t-5 m-b-20 p-b-8">
+                Questions And Feedback
+              </div>
+              <form method="post" novalidate>
+                {% csrf_token %}
+                <table border="1">
+                  {{ form }}
+                </table>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+
+
             </div>
           </div>
         </div>
@@ -123,9 +127,12 @@
 
   input {
     color: black;
+    width: 200px;
   }
 
   textarea {
-    color: purple;
+    color: black;
+    height: 100px;
+    width: 500px;
   }
 </style>
