@@ -2,7 +2,9 @@
   <div class="container header inner">
       <div class="container">
           <img src="static/img/me.jpg" alt="" height="250" width="200" class="user-image">
+          <div class="username-links">
           <h2><strong><em>Vincent Muya</em></strong></h2>
+        </div>
           <h4>Full Stack Web Developer</h4>
       </div>
   </div>
@@ -10,11 +12,9 @@
 <style media="screen">
 
   header {
-    background: url('http://getwallpapers.com/wallpaper/full/4/4/8/542689.jpg');
-    background-size: cover;
     width: 100%;
     height: 320px;
-    background-color: white;
+    background-color: #222222;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
@@ -29,13 +29,24 @@
   }
   .user-image{
   border-radius: 50%;
-  width: 210px;
-  height: 210px;
+  width: 213px;
+  height: 213px;
   vertical-align: middle;
   border: 10;
   margin-left: auto;
   margin-right: auto;
    margin-top: 8px;
   /*transform: rotate(270deg);*/
+  }
+  .username-links h2 {
+    padding: 0px 0;
+    border-bottom: 0px solid #404040;
+    color: #fff;
+    display: block;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .username-links h2:hover {
+    color: #ff304d;
   }
 </style>
