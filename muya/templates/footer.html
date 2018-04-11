@@ -12,14 +12,10 @@
                 Questions And Feedback
               </div>
               <form method="post">
-                {%csrf_token%}
-                <p>Email</p>
-            <input type="text" name="" value="">
-            <p>Question,Feedback or Enquiries </p>
-            <textarea name="name" rows="2" cols="50"></textarea>
-            <br>
-            <button class="btn btn-primary" name="button">Send</button>
-        </form>
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
 
 
             </div>
@@ -30,22 +26,27 @@
               <div class="footer-links">
                 <p><i class="fa fa-home mr-3"></i> Nairobi, Kenya</p>
                 <p><i class="fa fa-envelope mr-3"></i> vincentmuya13@gmail.com</p>
-              <a href="https://github.com/vincentmuya"><p><i class="fa fa-github mr-3"></i> Github account</p></a>
-              <a href=""><p><i class="fa fa-linkedin mr-3"></i> Linkedin</p></a>
+                <a href="https://github.com/vincentmuya">
+                  <p><i class="fa fa-github mr-3"></i> Github account</p>
+                </a>
+                <a href="">
+                  <p><i class="fa fa-linkedin mr-3"></i> Linkedin</p>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </footer>
       <div class="footer-bottom">
-        Vincent Muya ©  2018
+        Vincent Muya © 2018
       </div>
     </div>
   </div>
 </div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style media="screen">
   /* f. Footer section */
+
   .footer {
     padding: 20px 0;
     width: 100%;
@@ -118,5 +119,13 @@
     text-align: center;
     color: #fff;
     background: #222222;
+  }
+
+  input {
+    color: black;
+  }
+
+  textarea {
+    color: purple;
   }
 </style>

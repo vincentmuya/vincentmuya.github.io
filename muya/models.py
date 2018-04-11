@@ -23,3 +23,7 @@ class Project(models.Model):
     def this_project(cls):
         pro = cls.objects.all()
         return pro
+
+class FeedbackRecipients(models.Model):
+    email = models.EmailField()
+    question_Feedback = models.CharField(max_length=1000)
