@@ -4,13 +4,24 @@
     <meta charset="utf-8">
   </head>
   <body>
-      <h2 style="text-align:center;">About me</h2>
-      <!-- <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3> -->
-      <h3>Hi!<br>I am Vincent Muya, currently based in Nairobi,Kenya .I love outdoor activities and exploring life.<br>I am a software engineer who loves designing, programming, documenting, testing and bug fixing involved in creating and maintaining applications, frameworks, or other software components. </h3>
+<div class="tabs">
+<div class="row">
+<div class="col-md-0">
+      <h2 style="text-align:center;" id='about'>About me</h2>
+      <div class="col-md-12">
+        <h3>Hi!<br>I am Vincent Muya, currently based in Nairobi,Kenya .I love outdoor activities and exploring life.<br>I am a software engineer who loves designing, programming, documenting, testing and bug fixing involved in creating and maintaining applications, frameworks, or other software components. </h3>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="tabs">
+<div class="row">
+<div class="col-md-0">
     <section style="text-align:center;" >
     <h2 style="text-align:center;">Skills:</h2>
+    <div class="col-md-12">
     <ul>
-      <div class="tabs">
         <div class="row">
           <div class="col-md-6">
           <li>CSS <img src="https://freeiconshop.com/wp-content/uploads/edd/css-outline.png" alt="" height="30" width="30"></li>
@@ -36,11 +47,18 @@
             <li>PostgreSQL <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="" height="30" width="30"></li>
           </div>
           </div>
-          </div>
     </ul>
     </section>
+  </div>
+</div>
+</div>
+</div>
+<div class="tabs">
+<div class="row">
+<div class="col-md-0">
     <section id="projects">
         <h2 style="text-align:center;">My Projects</h2>
+        <div class="col-md-12">
     <div class="row">
       <div class="col-md-4">
         <div class="card" style="width: 20rem;">
@@ -86,10 +104,27 @@
 
     </div>
     </section>
+  </div>
+</div>
+</div>
+</div>
   </body>
 </html>
 <style media="screen">
 ul{
   list-style-type: none;
+}
+.tabs {
+  /*background-color: blue;*/
+  margin: 10px;
+  padding: 30px;
+  /*background-color: transparent;*/
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 15px #000;
+}
+
+.tabs:hover {
+  box-shadow: 0 0 10px rgba(33, 33, 33, .2);
 }
 </style>
