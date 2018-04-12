@@ -1,7 +1,5 @@
-{% load bootstrap3 %}
-{% load static %}
-<!-- Include the above in your HEAD tag  -->
-{%block content%}
+{% load bootstrap3 %} {%load staticfiles%} {%block styles%}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}"> {% endblock %} {%block content%}
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
@@ -24,7 +22,7 @@
               </div>
             </div>
             <div class="col-md-2 m-b-30">
-              </div>
+            </div>
             <div class="col-md-6 m-b-30">
               <div class="footer-title m-t-5 m-b-20 p-b-8">
                 Questions And Feedback
@@ -48,72 +46,7 @@
     </div>
   </div>
 </div>
-{% endblock %}
-{% block scripts %}
-  <script type="text/javascript" src="{%static 'js/feedback.js'%}"></script>
+{% endblock %} {% block scripts %}
+<script type="text/javascript" src="{%static 'js/feedback.js'%}"></script>
 {% endblock %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<style media="screen">
-  /* f. Footer section */
-
-  .footer {
-    padding: 10px 0;
-    width: 100%;
-    background: #313131;
-    color: #fff;
-  }
-
-  .footer-title {
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #4e4e4e;
-  }
-
-  .footer-title:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    width: 30px;
-    height: 4px;
-    background: #ff304d;
-  }
-
-  .footer-links a {
-    padding: 0px 0;
-    border-bottom: 0px solid #404040;
-    color: #fff;
-    display: block;
-    transition: color 0.5s ease-in-out;
-  }
-
-  .footer-links a:hover {
-    color: #ff304d;
-  }
-  /* g. Footer bottom section */
-
-  .footer-bottom {
-    width: 100%;
-    padding: 7px 0;
-    text-align: center;
-    color: #fff;
-    background: #222222;
-  }
-
-  input {
-    color: black;
-    width: 200px;
-    font-size: 15px;
-  }
-
-  textarea {
-    color: black;
-    height: 100px;
-    width: 500px;
-    font-size: 18px;
-  }
-</style>
