@@ -1,0 +1,65 @@
+{%extends 'base.html'%} {%load staticfiles%} {%block content%} {% load bootstrap3 %}
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" />
+</head>
+<body>
+  <div class="container">
+<h1>Skills</h1>
+<br>
+<p class="skills">I have a diverse set of skills ranging from:</p>
+<div class="row">
+  <div class="col-md-2">
+  </div>
+<div class="col-md-8">
+  <div class="row">
+</div>
+<div class="col-md-6">
+  <li>CSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/2000px-CSS.3.svg.png" class="language" alt="CSS"></li>
+  <p></p>
+  <li>HTML <img src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" class="language" alt="HTML"></li>
+  <p></p>
+  <li>Python <img src="http://magnasolutions.pl/wp-content/uploads/2015/07/python-logo.png" class="language"  alt="Python" ></li>
+  <p></p>
+  <li>Django <img src="https://static1.squarespace.com/static/5489b1f6e4b0c7fbb9e64fcb/t/563a25cde4b097a60fe146d1/1446651342223/?format=500w" class="language" alt="Django"></li>
+  </div>
+  <div class="col-md-6">
+  <li>Flask <img src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png" class="language" alt="Flask"></li>
+  <p></p>
+  <li>Angular <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" class="language" alt="Angular"></li>
+  <p></p>
+  <li>JavaScript <img src="https://quintagroup.com/cms/js/js-image/javascript-logo.png/image_preview" class="language" alt="Java Script"></li>
+  <p></p>
+  <li>PostgreSQL <img src="https://s24255.pcdn.co/wp-content/uploads/2017/07/postgresql-logo.png" class="language" alt="Postgre"></li>
+</div>
+</div>
+</div>
+<div class="col-md-2">
+
+</div>
+</div>
+</div>
+</body>
+<style media="screen">
+  body{
+    background-image: url("/static/img/background.jpeg");
+  }
+  h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+  p, li{
+    color: white;
+  }
+  .language{
+    height: 50px;
+    width: 50px;
+  }
+  .skills{
+    text-align: center;
+  }
+</style>
+{%endblock%}
