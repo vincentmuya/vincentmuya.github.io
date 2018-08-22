@@ -9,14 +9,9 @@
   <div class="container">
 <h1>Skills</h1>
 <br>
-<p class="skills">I have a diverse set of skills ranging from:</p>
-<div class="row">
-  <div class="col-md-2">
-  </div>
-<div class="col-md-8">
+<h3 class="skills">I have a diverse set of skills ranging from:</h3>
   <div class="row">
-</div>
-<div class="col-md-6">
+<div class="col-md-4">
   <li>CSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/2000px-CSS.3.svg.png" class="language" alt="CSS"></li>
   <p></p>
   <li>HTML <img src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" class="language" alt="HTML"></li>
@@ -25,7 +20,7 @@
   <p></p>
   <li>Django <img src="https://static1.squarespace.com/static/5489b1f6e4b0c7fbb9e64fcb/t/563a25cde4b097a60fe146d1/1446651342223/?format=500w" class="language" alt="Django"></li>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
   <li>Flask <img src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png" class="language" alt="Flask"></li>
   <p></p>
   <li>Angular <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" class="language" alt="Angular"></li>
@@ -34,11 +29,13 @@
   <p></p>
   <li>PostgreSQL <img src="https://s24255.pcdn.co/wp-content/uploads/2017/07/postgresql-logo.png" class="language" alt="Postgre"></li>
 </div>
-</div>
-</div>
-<div class="col-md-2">
-
-</div>
+<div class="col-md-4">
+  <p>Software development is the process of creating a computer software.
+It includes preparing a design, coding the program, and fixing the
+bugs. The final goal of software development is to translate user
+needs to software product, while continuously improving the team
+and the process.</p>
+  </div>
 </div>
 </div>
 </body>
@@ -51,7 +48,7 @@
     color: white;
     font-size: 50px;
   }
-  p, li{
+  p, li,h3{
     color: white;
   }
   .language{
@@ -59,7 +56,17 @@
     width: 50px;
   }
   .skills{
-    text-align: center;
+margin-left: 100px;
+ }
+ @media screen and (max-width: 650px) {
+   h1{font-size: 45px;
+   }
+   h3{
+     font-size: 20.70px;
+   }
+   .skills{
+ margin-left: 0px;
   }
+}
 </style>
 {%endblock%}

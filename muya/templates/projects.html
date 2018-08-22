@@ -9,7 +9,8 @@
   <div class="container">
 <h1>Projects</h1>
 <br>
-<p class="projects">A sample of my projects</p>
+<h3 class="projects">A sample of my projects:</h3>
+<br>
 <div class="row">
   <div class="col-md-1">
   </div>
@@ -18,7 +19,7 @@
   <div class="col-md-4">
     <div class="card" style="width: 20rem;">
       <a href="https://littleeinst.herokuapp.com/" target="_blank">
-        <img class="card-img-top" src="/static/img/little.png" alt=Card image cap height="200px" width="250px"></a>
+        <img class="card-img-top" src="/static/img/lit.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
         <h3 class="card-title">Little Einsteins</h3>
         <p class="card-text">A Django web app about the school Little Einsteins where students can enroll and other features included too</p>
@@ -32,7 +33,7 @@
   <div class="col-md-4">
     <div class="card" style="width: 20rem;">
       <a href="https://scorpus1.herokuapp.com/" target="_blank">
-        <img class="card-img-top" src="/static/img/scorpus.png" alt=Card image cap height="200px" width="250px"></a>
+        <img class="card-img-top" src="/static/img/scor.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
         <h3 class="card-title">Scorpus Logistics Cargo</h3>
         <p class="card-text">Its a website where a user can track their shipments</p>
@@ -74,11 +75,21 @@
     color: white;
     font-size: 50px;
   }
-  p,h3{
+  p,h3,h2{
     color: white;
   }
   .projects{
     text-align: center;
+  }
+  @media screen and (max-width: 650px) {
+    h1{font-size: 45px;
+    }
+    .container {
+      padding-left: 55px;
+   }
+   .card{
+     padding-top: 8px;
+   }
   }
 </style>
 {%endblock%}
