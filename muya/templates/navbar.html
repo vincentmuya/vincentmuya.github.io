@@ -5,10 +5,10 @@
 <div class="overlay-navigation">
   <nav role="navigation">
     <ul>
-      <li><a href="#" data-content="The beginning">Home</a></li>
-      <li><a href="#" data-content="I got game">Skills</a></li>
-      <li><a href="#" data-content="Only the finest">Works</a></li>
-      <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+      <li><a href="{%url 'index'%}">Home</a></li>
+      <li><a href="{%url 'skills'%}">Skills</a></li>
+      <li><a href="{%url 'projects'%}">Projects</a></li>
+      <li><a href="{%url 'contact'%}">Contact</a></li>
     </ul>
   </nav>
 </div>
@@ -88,7 +88,7 @@ letter-spacing: 4px;
 text-decoration: none;
 display: block;
 text-align: center;
-font-size: 0.9rem;
+font-size: 40px;
 }
 
 nav li a:before {
@@ -106,7 +106,6 @@ transition: all .2s linear;
 }
 
 nav li a:after {
-content: attr(data-content);
 font-size: 0.7rem;
 transition: all .2s linear;
 opacity: 0;

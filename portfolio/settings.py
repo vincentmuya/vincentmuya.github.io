@@ -14,13 +14,6 @@ import os
 import dj_database_url
 from decouple import config
 
-# Email configurations remember to install python-decouple
-EMAIL_USE_TLS = config('EMAIL_USE_TLS')
-EMAIL_HOST = config('EMAIL_HOST')
-EMAIL_PORT = config('EMAIL_PORT')
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -36,6 +29,23 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+
+# Application definition
+SERVER_EMAIL = 'vincentmuya13@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_PASSWORD = 'vincent1115'
+EMAIL_HOST_USER = SERVER_EMAIL
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+ADMINS = [
+    ('Vincent', 'vincentmuya13@gmail.com'),
+
+]
+
+MANAGERS = ADMINS
 
 # Application definition
 
