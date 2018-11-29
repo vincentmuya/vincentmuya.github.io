@@ -33,7 +33,7 @@
 </body>
 <style media="screen">
   body{
-    background: url("/static/img/rainbow-nebula.jpg");
+    background: url("/static/img/rainbow-nebula.jpg") repeat;
   }
   h1{
     text-align: center;
@@ -56,3 +56,24 @@ form{
 }
 </style>
 {%endblock%}
+<!-- Script -->
+{% block scripts %}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   {% bootstrap_javascript %}
+   <script>
+   $(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 15;
+    traY = ((4 * mouseY) / 570) + 25;
+    console.log(traX);
+    $("body").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
+</script>
+  {% endblock %}

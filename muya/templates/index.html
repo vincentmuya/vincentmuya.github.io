@@ -39,15 +39,16 @@
     color: red;
   }
   h1{
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     text-align: center;
     color: white;
     font-size: 50px;
   }
   p{
     color: white;
+    /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 20px;
+    font-size: 22px;
   }
   .me{
   border-radius: 50%;
@@ -127,8 +128,8 @@
   $(document).mousemove(function(e){
     mouseX = e.pageX;
     mouseY = e.pageY;
-    traX = ((4 * mouseX) / 570) + 40;
-    traY = ((4 * mouseY) / 570) + 50;
+    traX = ((4 * mouseX) / 570) + 15;
+    traY = ((4 * mouseY) / 570) + 25;
     console.log(traX);
     $("body").css({"background-position": traX + "%" + traY + "%"});
   });
