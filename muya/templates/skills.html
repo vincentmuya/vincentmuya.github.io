@@ -29,7 +29,7 @@
   <p></p>
   <li id="li">JavaScript <img src="https://b.kisscc0.com/20180815/xgq/kisscc0-javascript-logo-number-angularjs-node-js-js-5b74177e8401c7.7492136215343348465407.png" class="language" alt="Java Script"></li>
   <p></p>
-  <li>Angular <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" class="language" alt="Angular"></li>
+  <li id="li">Angular <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" class="language" alt="Angular"></li>
   <p></p>
   <li id="li">JQuery <img src="https://icon2.kisspng.com/20180502/heq/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d3322d7.6814333115252383652095.jpg" class="language" alt="JQuery"></li>
   <p></p>
@@ -94,8 +94,8 @@ margin-left: 100px;
   $(document).mousemove(function(e){
     mouseX = e.pageX;
     mouseY = e.pageY;
-    traX = ((1 * mouseX) / 570) + 50;
-    traY = ((1 * mouseY) / 570) + 50;
+    traX = ((1 * mouseX) / 570) + 5;
+    traY = ((1 * mouseY) / 570) + 5;
     console.log(traX);
     $("body").css({"background-position": traX + "%" + traY + "%"});
   });

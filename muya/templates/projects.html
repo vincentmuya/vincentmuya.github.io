@@ -117,8 +117,8 @@
   $(document).mousemove(function(e){
     mouseX = e.pageX;
     mouseY = e.pageY;
-    traX = ((1 * mouseX) / 570) + 40;
-    traY = ((1 * mouseY) / 570) + 50;
+    traX = ((1 * mouseX) / 570) + 20;
+    traY = ((1 * mouseY) / 570) + 20;
     console.log(traX);
     $("body").css({"background-position": traX + "%" + traY + "%"});
   });
