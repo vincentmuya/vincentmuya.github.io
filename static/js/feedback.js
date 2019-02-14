@@ -12,8 +12,9 @@ $(document).ready(function(){
         alert(data['success'])
       },
     })// END of Ajax method
-    $('#id_question_Feedback').val('')
+    $('#id_Name').val('')
     $("#id_email").val('')
+    $('#id_question_Feedback').val('')
   }) // End of submit event
 
 }) // End of document ready function

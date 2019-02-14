@@ -60,8 +60,9 @@ label {
 </style>
 {%endblock%}
 <!-- Script -->
-{% block scripts %}
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% block scripts %} {{block.super}}
+<script type="text/javascript" src=""></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    {% bootstrap_javascript %}
    <script>
    $(document).ready(function(){

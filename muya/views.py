@@ -31,13 +31,3 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form':form})
-
-def ajaxcontact(request):
-        Name = request.POST.get('Name')
-        email = request.POST.get('email')
-        Question_or_Feedback = request.POST.get('Question_or_Feedback')
-
-        recipient=Item(Name=Name, email=email, Question_or_Feedback=Question_or_Feedback)
-        recipient.save()
-        data = {'success': 'Your Message Was Sent successfully'}
-        return JsonResponse(data)
