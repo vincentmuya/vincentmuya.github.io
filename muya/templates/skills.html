@@ -9,7 +9,7 @@
   <div class="container">
 <h1>Skills</h1>
 <br>
-<h3 class="skills">I have a diverse set of skills ranging from:</h3>
+<p class="skills" style="text-align:center;">I have a diverse set of skills ranging from:</p>
   <div class="row">
 <div class="col-md-4">
   <li id="li">CSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/2000px-CSS.3.svg.png" class="language" alt="CSS"></li>
@@ -41,13 +41,43 @@
   <p></p>
   <li id="li">Bootstrap <img src="https://www.drupal.org/files/project-images/bootstrap-stack.png" class="language" alt="Api"></li>
 </div>
-<div class="col-md-4">
-  <p>Software development is the process of creating a computer software.
+<br>
+<div class="col-md-2">
+  <!-- <p>Software development is the process of creating a computer software.
 It includes preparing a design, coding the program, and fixing the
 bugs. The final goal of software development is to translate user
 needs to software product, while continuously improving the team
-and the process.</p>
+and the process.</p> -->
+<div class="card" id="block" >
+      <img src="https://cdn4.iconfinder.com/data/icons/jobs-industry-types/128/12-512.png" class="ski" alt="Api" >
+      <div class="card-body">
+        <h4 class="card-text">Fast load times and lag free interaction,a priority.</h4>
+      </div>
+    </div>
+    <br>
+    <div class="card" id="block" >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Simple_light_bulb_graphic.png" class="ski" alt="Api" >
+          <div class="card-body">
+            <h4 class="card-text">My layouts will work on any device, big or small.</h4>
+          </div>
+        </div>
   </div>
+  <div class="col-md-2">
+    <div class="card" id="block" >
+          <img src="https://www.topsiawebsitedesigns.com/twd/wp-content/uploads/2017/08/mobile-res.png" class="ski" alt="Api" >
+          <div class="card-body">
+            <h4 class="card-text">Strong preference for easy to use, intuitive UX/UI.</h4>
+          </div>
+        </div>
+        <br>
+        <div class="card" id="block" >
+              <img src="http://cdn.onlinewebfonts.com/svg/img_558532.png" class="ski" alt="Api" >
+              <div class="card-body">
+                <h4 class="card-text">Websites don't have to be static, I love making pages come to life.</h4>
+              </div>
+            </div>
+      </div>
+</div>
 </div>
 </div>
 </body>
@@ -63,8 +93,13 @@ and the process.</p>
   }
   p,h3{
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  h4{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 19px;
   }
   #li{
     color: white;
@@ -75,8 +110,15 @@ and the process.</p>
     height: 50px;
     width: 50px;
   }
+  .ski{
+    height: 100px;
+    width: 100px;
+  }
   .skills{
 margin-left: 100px;
+ }
+ .card{
+   width: 15rem;
  }
  @media screen and (max-width: 650px) {
    h1{font-size: 45px;
@@ -86,6 +128,19 @@ margin-left: 100px;
    }
    .skills{
  margin-left: 0px;
+  }
+  .ski{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+  }
+  .card{
+    width: 20rem;
+    margin-left: 50px;
+  }
+  h4,p{
+    font-size: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 }
 </style>
