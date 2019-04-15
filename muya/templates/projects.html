@@ -56,7 +56,7 @@
     </div>
   </div>
 </div>
-
+<br>
 <div class="row">
   <div class="col-md-4">
     <div class="card" style="width: 20rem;">
@@ -74,11 +74,11 @@
 
   <div class="col-md-4">
     <div class="card" style="width: 20rem;">
-      <a href="#" ><img class="card-img-top" src="/static/img/emart.png" alt=Card image cap height="200px" width="250px"></a>
+      <a href="#" ><img class="card-img-top" id="soon" src="/static/img/emart.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="centered">Coming Soon</div>
       <div class="card-body">
         <h3 class="card-title"><strong>E-mart</strong></h3>
-        <p class="card-text">A ecommerce platform with interesting features</p>
+        <p class="card-text">A ecommerce platform with interesting features.</p>
         <div class="row">
           <a href="#" ><button class="button disabled" type="button" name="button">Github link</button></a>
           <a href="#" ><button class="button disabled" type="button" name="button">Deployed link</button></a>
@@ -123,15 +123,23 @@
   }
   .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 40%;
   transform: translate(-50%, -50%);
+  font-weight: 900;
+  color: red;
+  font-size: 35px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  cursor: not-allowed;
 }
 .button.disabled {
   opacity: 0.65;
   cursor: not-allowed;
+  font-size: 17px;
 }
-
+#soon{
+  cursor: not-allowed;
+}
   @media screen and (max-width: 650px) {
     h1{font-size: 45px;
     }
@@ -144,6 +152,17 @@
    button{
      margin-left: 15px;
    }
+   .centered {
+   position: absolute;
+   top: 30%;
+   left: 40%;
+   transform: translate(-50%, -50%);
+   font-weight: 900;
+   color: red;
+   font-size: 30px;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   cursor: not-allowed;
+ }
   }
 </style>
 {%endblock%}
