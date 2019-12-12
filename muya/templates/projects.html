@@ -98,7 +98,7 @@
 </body>
 <style media="screen">
   body{
-    background: url("/static/img/rainbow-nebula.jpg") repeat;
+    background-color:black;
   }
   h1{
     text-align: center;
@@ -154,24 +154,3 @@
   }
 </style>
 {%endblock%}
-<!-- Script -->
-{% block scripts %}
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   {% bootstrap_javascript %}
-   <script>
-   $(document).ready(function(){
-  var mouseX, mouseY;
-  var ww = $( window ).width();
-  var wh = $( window ).height();
-  var traX, traY;
-  $(document).mousemove(function(e){
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-    traX = ((1 * mouseX) / 570) + 20;
-    traY = ((1 * mouseY) / 570) + 20;
-    console.log(traX);
-    $("body").css({"background-position": traX + "%" + traY + "%"});
-  });
-});
-</script>
-  {% endblock %}
