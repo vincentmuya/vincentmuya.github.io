@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -15,7 +19,8 @@
   </div>
 <div class="col-md-10">
 <div class="row">
-  <div class="col-md-4">
+
+  <!-- <div class="col-md-4">
     <div class="card" style="width: 20rem;">
       <a href="http://littleeinsteinsea.com/" target="_blank">
         <img class="card-img-top" src="/static/img/lit.png" alt=Card image cap height="200px" width="250px"></a>
@@ -28,7 +33,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
   <div class="col-md-4">
     <div class="card" style="width: 20rem;">
       <a href="https://freightcargo.herokuapp.com/" target="_blank">
@@ -43,6 +49,21 @@
       </div>
     </div>
   </div>
+
+  <div class="col-md-4">
+    <div class="card" style="width: 20rem;">
+      <a href="https://ecomart.herokuapp.com" target="_blank"><img class="card-img-top" src="/static/img/emart.png" alt=Card image cap height="200px" width="250px"></a>
+      <div class="card-body">
+        <h3 class="card-title"><strong>Ecomart</strong></h3>
+        <p class="card-text">A ecommerce platform where a user can post and communicate with buyer.</p><br>
+        <div class="row">
+          <a href="https://github.com/vincentmuya/ecommerce" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+          <a href="https://ecomart.herokuapp.com" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="col-md-4">
     <div class="card" style="width: 20rem;">
       <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><img class="card-img-top" src="/static/img/pigdice.png" alt=Card image cap height="200px" width="250px"></a>
@@ -61,17 +82,23 @@
 <div class="row">
 
   <div class="col-md-4">
-    <div class="card" style="width: 20rem;">
-      <a href="https://ecomart.herokuapp.com" target="_blank"><img class="card-img-top" src="/static/img/emart.png" alt=Card image cap height="200px" width="250px"></a>
-      <div class="card-body">
-        <h3 class="card-title"><strong>Ecomart</strong></h3>
-        <p class="card-text">A ecommerce platform where a user can post and communicate with buyer.</p>
-        <div class="row">
-          <a href="https://github.com/vincentmuya/ecommerce" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <a href="https://ecomart.herokuapp.com" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
-        </div>
+  <div class="pane pane-default">
+      <div class="pane-body">
+          <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+              <img src="/static/img/USSD.png" alt="..." height="200px" width="250px">
+              <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+          </a>
+          <h3 class="card-title"><strong>USSD Payment</strong></h3>
+          <p class="card-text">A USSD platform for paying<br>fare with mobile money</p><br>
+          <a href="https://github.com/vincentmuya/tickets" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+          <button class="btn btn-warning" type="button" name="button" >
+            <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                <img src="/static/img/USSD.png" alt="USSD" height="0px" width="0px">
+                <span class="overlay">Preview<i class="glyphicon glyphicon-fullscreen"></i></span>
+            </a>
+          </button>
       </div>
-    </div>
+  </div>
   </div>
 
   <div class="col-md-4">
@@ -88,7 +115,43 @@
     </div>
   </div>
 
+    <div class="col-md-4">
+    <div class="pane pane-default">
+        <div class="pane-body">
+            <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                <img src="/static/img/terminalChat.png" alt="USSD" height="200px" width="250px">
+                <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+            </a>
+            <h3 class="card-title"><strong>Terminal Chat</strong></h3>
+            <p class="card-text">A Terminal chat application<br>with different chatrooms</p><br>
+            <a href="https://github.com/vincentmuya/terminal-chat" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+            <button class="btn btn-warning" type="button" name="button" >
+              <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                  <img src="/static/img/terminalChat.png" alt="terminalchat" height="0px" width="0px">
+                  <span class="overlay">Preview<i class="glyphicon glyphicon-fullscreen"></i></span>
+              </a>
+            </button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h3 class="modal-title" id="myModalLabel" style= "color:black; text-align:center;">Preview</h3>
 </div>
+  <div class="modal-body">
+      <img src="" alt="" />
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
 </div>
 <!-- <div class="col-md-1">
 
@@ -100,6 +163,11 @@
   body{
     background-color:black;
   }
+
+  .modal-body {
+    position: relative;
+    padding: 0px;
+}
   h1{
     text-align: center;
     color: white;
@@ -154,3 +222,30 @@
   }
 </style>
 {%endblock%}
+{% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     {% bootstrap_javascript %}
+  <!-- Javascript for each modal containing a different pic. This code was written so that you don't have to write multiple modal divs -->
+   <script>
+   $(document).ready(function() {
+  var $lightbox = $('#lightbox');
+  $('[data-target="#lightbox"]').on('click', function(event) {
+      var $img = $(this).find('img'),
+          src = $img.attr('src'),
+          alt = $img.attr('alt'),
+          css = {
+              'maxWidth': $(window).width() - 100,
+              'maxHeight': $(window).height() - 100
+          };
+      $lightbox.find('img').attr('src', src);
+      $lightbox.find('img').attr('alt', alt);
+      $lightbox.find('img').css(css);
+  });
+  $lightbox.on('shown.bs.modal', function (e) {
+      var $img = $lightbox.find('img');
+      $lightbox.find('.modal-dialog').css({'width': $img.width()});
+      $lightbox.find('.close').removeClass('hidden');
+  });
+});
+   </script>
+   {% endblock %}

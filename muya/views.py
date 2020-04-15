@@ -5,12 +5,25 @@ from .forms import ContactForm
 from django.http import JsonResponse
 from django.core.mail import mail_admins
 from django.http import HttpResponseRedirect
-
+from github import Github
 
 # Create your views here.
-def index(request):
+from github import Github
 
-    return render(request, "index.html")
+
+# First create a Github instance:
+g = Github("5176de4acf199721cbd9d3967372d0da0eb4ea8a")
+
+# Github Enterprise with custom hostname
+# g = Github(base_url="https://{vincentmuya}/api/v3", login_or_token="access_token")
+
+# Then play with your Github objects:
+for repo in g.get_user().get_repos():
+    print(repo.name)
+
+def index(request):
+    repos = repo.name
+    return render(request, "index.html", {"repos":repos})
 
 def skills(request):
     return render(request, "skills.html")
