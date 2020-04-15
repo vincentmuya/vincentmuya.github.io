@@ -13,7 +13,7 @@ from github import Github
 #
 # # First create a Github instance:
 # g = Github("5176de4acf199721cbd9d3967372d0da0eb4ea8a")
-# 
+#
 # # Github Enterprise with custom hostname
 #
 # # Then play with your Github objects:
@@ -21,8 +21,7 @@ from github import Github
 #     print(repo.name)
 
 def index(request):
-    repos = repo.name
-    return render(request, "index.html", {"repos":repos})
+    return render(request, "index.html")
 
 def skills(request):
     return render(request, "skills.html")
