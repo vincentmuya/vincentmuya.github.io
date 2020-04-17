@@ -8,18 +8,6 @@ from django.http import HttpResponseRedirect
 from github import Github
 
 # Create your views here.
-# from github import Github
-#
-#
-# # First create a Github instance:
-# g = Github("5176de4acf199721cbd9d3967372d0da0eb4ea8a")
-#
-# # Github Enterprise with custom hostname
-#
-# # Then play with your Github objects:
-# for repo in g.get_user().get_repos():
-#     print(repo.name)
-
 def index(request):
     return render(request, "index.html")
 
