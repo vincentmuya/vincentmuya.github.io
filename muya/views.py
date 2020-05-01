@@ -5,7 +5,6 @@ from .forms import ContactForm
 from django.http import JsonResponse
 from django.core.mail import mail_admins
 from django.http import HttpResponseRedirect
-from github import Github
 
 # Create your views here.
 def index(request):
