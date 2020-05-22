@@ -26,25 +26,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/muya/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/muya/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/migrations/0002_auto_20180328_0545.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/migrations/0003_feedbackrecipients.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/migrations/0004_auto_20180822_0240.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/migrations/0005_remove_contact_phone_number.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/muya/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/templates/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/skills.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/muya/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/bin/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/bin/activate.csh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/bin/activate.fish" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
