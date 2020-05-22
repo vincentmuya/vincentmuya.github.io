@@ -56,7 +56,6 @@ MANAGERS = ADMINS
 
 INSTALLED_APPS = [
     'muya',
-    'tinymce',
     'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -1,7 +1,5 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse, Http404,HttpResponseRedirect
-from .models import Contact
-from .forms import ContactForm
 from django.http import JsonResponse
 from django.core.mail import mail_admins
 from django.http import HttpResponseRedirect
