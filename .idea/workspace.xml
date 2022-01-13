@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,9 +28,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/muya/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/muya/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/skills.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +48,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1bISdTdkqY0KewWQJKWVEJDmhsH" />
   <component name="ProjectViewState">
@@ -46,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static/img" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,20 +120,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1917" y="227" width="253" height="268" key="#Notifications" timestamp="1590075706446">
-      <screen x="1366" y="0" width="1366" height="768" />
-    </state>
-    <state x="1917" y="227" width="253" height="268" key="#Notifications/0.27.1366.698/1366.0.1366.768@1366.0.1366.768" timestamp="1590075706446" />
-    <state x="1710" y="0" width="668" height="725" key="#manage" timestamp="1590149217493">
-      <screen x="1366" y="0" width="1366" height="768" />
-    </state>
-    <state x="1710" y="0" width="668" height="725" key="#manage/0.27.1366.698/1366.0.1366.768@1366.0.1366.768" timestamp="1590149217493" />
-    <state x="1740" y="0" width="618" height="768" key="find.popup" timestamp="1590127656561">
-      <screen x="1366" y="0" width="1366" height="768" />
-    </state>
-    <state x="1740" y="0" width="618" height="768" key="find.popup/0.27.1366.698/1366.0.1366.768@1366.0.1366.768" timestamp="1590127656561" />
   </component>
 </project>

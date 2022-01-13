@@ -1,4 +1,4 @@
-{%extends 'base.html'%} {%load staticfiles%} {%block content%} {% load bootstrap3 %}
+{%extends 'base.html'%} {%load static%} {%block content%} {% load bootstrap4 %}
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,12 +13,9 @@
   <div class="container">
 <h1>Projects</h1>
 <h3 class="projects">A sample of my projects:</h3>
-<div class="row">
-<div class="col-md-10">
-<div class="row">
-
-   <div class="col-md-4">
-    <div class="card" style="width: 20rem;">
+  <div class="row">
+    <div class="col-sm">
+    <div class="card" style="width: 19rem;">
       <a href="http://littleeinsteinsea.com/" target="_blank">
         <img class="card-img-top" src="/static/img/lit.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -30,10 +27,24 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card" style="width: 20rem;">
+    </div>
+    <div class="col-sm">
+          <div class="card" style="width: 19rem;">
+      <a href="https://cbm-international.herokuapp.com/" target="_blank">
+        <img class="card-img-top" src="/static/img/cbm.png" alt=Card image cap height="200px" width="250px"></a>
+      <div class="card-body">
+        <h3 class="card-title"> <strong>CBM-International</strong></h3>
+        <p class="card-text">An E-commerce platform that deals with electronics with mobile/digital payment options.
+</p>
+        <div class="row">
+          <a href="https://github.com/vincentmuya/CBM" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+          <a href="https://cbm-international.herokuapp.com/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+    <div class="card" style="width: 19rem;">
       <a href="https://freightcargo.herokuapp.com/" target="_blank">
         <img class="card-img-top" src="/static/img/sky.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -45,17 +56,17 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
-
-    <div class="col-md-4">
-  <div class="pane pane-default">
-      <div class="pane-body">
-          <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
-              <img src="/static/img/USSD.png" alt="..." height="200px" width="250px">
-              <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-          </a>
-          <h3 class="card-title"><strong>USSD Payment</strong></h3>
-          <p class="card-text">A USSD platform for paying<br>fare with mobile money</p><br>
+    <div class="row">
+    <div class="col-sm">
+<div class="card" style="width: 19rem;">
+<a href="#" class="zoom" data-toggle="modal" data-target="#lightbox"><img src="/static/img/USSD.png" alt="..." height="200px" width="250px">
+  <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span></a>
+  <div class="card-body">
+        <h3 class="card-title"><strong>USSD Payment</strong></h3>
+        <p class="card-text">A USSD platform for paying<br>fare with mobile money</p>
+        <div class="row">
           <a href="https://github.com/vincentmuya/tickets" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
           <button class="btn btn-warning" type="button" name="button" >
             <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
@@ -63,53 +74,34 @@
                 <span class="overlay">Preview<i class="glyphicon glyphicon-fullscreen"></i></span>
             </a>
           </button>
-      </div>
-  </div>
-  </div>
-
-</div>
-<br>
-<div class="row">
-
-      <div class="col-md-4">
-    <div class="card" style="width: 20rem;">
-      <a href="https://ecomart.herokuapp.com" target="_blank"><img class="card-img-top" src="/static/img/emart.png" alt=Card image cap height="200px" width="250px"></a>
-      <div class="card-body">
-        <h3 class="card-title"><strong>Ecomart</strong></h3>
-        <p class="card-text">A ecommerce platform where a user can post and communicate with buyer.</p><br>
-        <div class="row">
-          <a href="https://github.com/vincentmuya/ecommerce" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <a href="https://ecomart.herokuapp.com" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
         </div>
       </div>
     </div>
   </div>
 
-
-    <div class="col-md-4">
-    <div class="card" style="width: 20rem;">
+    <div class="col-sm">
+     <div class="card" style="width: 19rem;">
       <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><img class="card-img-top" src="/static/img/pigdice.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
         <h3 class="card-title"><strong>Pig Dice</strong></h3>
-        <p class="card-text">This is a digital Javascript dice game where two users compete to finish the game by reaching the target score.</p>
+        <p class="card-text">A Javascript dice game where users compete to finish the game.</p>
         <div class="row">
           <a href="https://github.com/vincentmuya/Pig-dice" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
           <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
-    <div class="col-md-4">
-    <div class="pane pane-default">
-        <div class="pane-body">
-            <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
-                <img src="/static/img/terminalChat.png" alt="USSD" height="200px" width="250px">
-                <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-            </a>
-            <h3 class="card-title"><strong>Terminal Chat</strong></h3>
-            <p class="card-text">A Terminal chat application<br>with different chatrooms</p><br>
-            <a href="https://github.com/vincentmuya/terminal-chat" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+    <div class="col-sm">
+<div class="card" style="width: 19rem;">
+<a href="#" class="zoom" data-toggle="modal" data-target="#lightbox"><img src="/static/img/terminalChat.png" alt="USSD" height="200px" width="250px">
+  <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span></a>
+  <div class="card-body">
+        <h3 class="card-title"><strong>Terminal Chat</strong></h3>
+        <p class="card-text">A Terminal chat application<br>with different chatrooms</p>
+        <div class="row">
+          <a href="https://github.com/vincentmuya/terminal-chat" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
             <button class="btn btn-warning" type="button" name="button" >
               <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
                   <img src="/static/img/terminalChat.png" alt="terminalchat" height="0px" width="0px">
@@ -117,17 +109,10 @@
               </a>
             </button>
         </div>
+      </div>
     </div>
-  </div>
+    </div>
 
-  <div class="row">
-      <div class="col-md-4">
-
-          </div>
-
-          <div class="col-md-4">
-
-              </div>
   </div>
 
   <!-- Modal -->
@@ -145,17 +130,6 @@
 </div>
 </div>
 
-</div>
-
-</div>
-
-<div class="col-md-2" id="contactinfo">
-      <h2 style="color:white; font-size:20px;">Contact info:</h2>
-      <p  style="font-size:20px;" >vincentmuya13@gmail.com</p>
-      <a href="https://github.com/vincentmuya" target="_blank"><p  style="color:blue; font-size:20px;">Github profile <span class="glyphicon glyphicon-new-window"></span></p></a>
-      <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:blue; font-size:20px;">Linked in <span class="glyphicon glyphicon-new-window"></span></p></a>
-    </div>
-</div>
 </div>
 </body>
 <style media="screen">
@@ -175,6 +149,7 @@
   }
   .btn{
     font-size: 15px;
+    margin: 20px;
   }
   p,h2{
     color: white;
@@ -193,30 +168,26 @@
   h2, #contactinfo.a{
     font-size: 20px;
   }
+  .card{
+  margin-bottom:10px;
+  }
+.card-body{
+background-color:black;
+}
+.zoom{
+background-color:black;
 
+}
   @media screen and (max-width: 650px) {
-    h1{font-size: 45px;
+    h1{
+    font-size: 45px;
     }
     .container {
       padding-left: 55px;
    }
-   .card{
-     padding-top: 8px;
-   }
    button{
      margin-left: 15px;
    }
-   .centered {
-   position: absolute;
-   top: 30%;
-   left: 40%;
-   transform: translate(-50%, -50%);
-   font-weight: 900;
-   color: red;
-   font-size: 30px;
-   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-   cursor: not-allowed;
- }
   }
 </style>
 {%endblock%}
