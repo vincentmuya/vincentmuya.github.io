@@ -29,9 +29,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/bin/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/bin/activate.csh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/bin/activate.fish" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtual/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
