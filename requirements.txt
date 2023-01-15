@@ -37,7 +37,7 @@ django-model-utils==4.1.1
 django-mptt==0.13.4
 django-registration==3.2
 django-seo==0.3.5
-django-tinymce==3.3.0
+django-tinymce==3.4.0
 DjangoSEO==1.0
 docker==5.0.3
 duplicity==0.8.21
