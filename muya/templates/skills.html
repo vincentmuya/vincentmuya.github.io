@@ -4,10 +4,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="{% static 'css/skills.css' %}">
 </head>
 <body>
   <div class="container">
 <h1>Skills</h1>
+<div class="underline-title"></div>
+
 <br>
   <div class="row">
 <div class="col-md-3">
@@ -49,7 +52,7 @@
   <p></p>
   <li id="li">Linux <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" class="language" alt="Linux"></li>
 </div>
-
+<br>
 <div class="col-md-3">
 <div class="card" id="block" >
       <img src="https://cdn4.iconfinder.com/data/icons/jobs-industry-types/128/12-512.png" class="ski" alt="Api" >
@@ -82,82 +85,17 @@
             </div>
       </div>
 </div>
-
+      <br>
+<div class="card2" id="" >
         <div style="text-align: center;" class="" id="contactinfo">
-      <h2 style="color:white; font-size:20px;">Contact info:</h2>
-      <p  style="font-size:20px;" >vincentmuya13@gmail.com</p>
-      <a href="https://github.com/vincentmuya" target="_blank"><p  style="color:white; font-size:20px;">Github profile </p></a>
-      <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:white; font-size:20px;">Linked in</p></a>
+      <h2 style="color:red; font-size:20px;">Contact info:</h2>
+      <p  style="font-size:20px; color:black;" >vincentmuya13@gmail.com</p>
+      <a href="https://github.com/vincentmuya" target="_blank"><p  style="color:black; font-size:20px;">Github profile </p></a>
+      <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:black; font-size:20px;">Linked in</p></a>
     </div>
+        </div>
+
 </div>
 </div>
 </body>
-<style media="screen">
-  body{
-    background-color:black;
-  }
-  h1{
-    text-align: center;
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    font-size: 50px;
-  }
-  p,h3{
-    color: white;
-    font-size: 24px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  h4{
-    color: white;
-    font-size: 19px;
-  }
-  #li{
-    color: white;
-    font-size: 20px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  .language{
-    height: 50px;
-    width: 50px;
-  }
-  .ski{
-    height: 100px;
-    width: 100px;
-    margin-left:15%;
-  }
-  .skills{
-margin-left: 100px;
- }
- .card{
-   width: 15rem;
-   background:white;
-   border-radius:10%;
- }
- h4.card-text{
-   margin-left:10%;
-   color:black;
- }
- @media screen and (max-width: 650px) {
-   h1{font-size: 45px;
-   }
-   h3{
-     font-size: 20.70px;
-   }
-   .skills{
- margin-left: 0px;
-  }
-  .ski{
-    height: 60px;
-    width: 60px;
-    margin-left: 50px;
-  }
-  .card{
-    width: 15rem;
-    margin-left: 50px;
-  }
-  h4,p,a{
-    font-size: 20px;
-  }
-}
-</style>
 {%endblock%}

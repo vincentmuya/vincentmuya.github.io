@@ -8,6 +8,7 @@ urlpatterns=[
     url(r'^skills/$',views.skills,name='skills'),
     url(r'^projects/$',views.projects,name='projects'),
     url(r'^contact/$',views.contact,name='contact'),
+    url(r'^auto-reply/$',views.auto_reply,name='auto_reply'),
     ]
 
 

@@ -1,6 +1,6 @@
 {%extends 'base.html'%} {%load static%} {%block content%} {% load bootstrap4 %}
 <head>
-     <link rel="icon" href="static/img/me.jpg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="static/img/me.jpg" type="image/gif" sizes="16x16">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
@@ -8,10 +8,12 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
 </head>
 <body>
   <div class="container">
 <h1>Projects</h1>
+      <div class="underline-title"></div>
 <h3 class="projects">A sample of my projects:</h3>
   <div class="row">
     <div class="col-sm">
@@ -61,13 +63,13 @@
     <div class="row">
     <div class="col-sm">
         <div class="card" style="width: 19rem;">
-<a href="#" class="zoom" data-toggle="modal" data-target="#lightbox"><img src="/static/img/nkb.png" alt="USSD" height="200px" width="250px">
+<a href="#" class="zoom" data-toggle="modal" data-target="#lightbox"><img src="/static/img/pos 1.png" alt="USSD" height="200px" width="250px">
   <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span></a>
   <div class="card-body">
         <h3 class="card-title"><strong>OnLine POS</strong></h3>
         <p class="card-text">An online POS System<br>with different features</p>
         <div class="row">
-          <a href="https://github.com/vincentmuya/mkb" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+          <a href="https://github.com/vincentmuya/Auto_log" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
             <button class="btn btn-warning" type="button" name="button" >
               <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
                   <img src="/static/img/nkb.png" alt="nkb" height="0px" width="0px">
@@ -114,11 +116,12 @@
     </div>
 
   </div>
-      <div style="text-align: center;" class="" id="contactinfo">
-      <h2 style="color:white; font-size:20px;">Contact info:</h2>
-      <p  style="font-size:20px;" >vincentmuya13@gmail.com</p>
-      <a href="https://github.com/vincentmuya" target="_blank"><p  style="color:white; font-size:20px;">Github profile <span class="glyphicon glyphicon-new-window"></span></p></a>
-      <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:white; font-size:20px;">Linked in <span class="glyphicon glyphicon-new-window"></span></p></a>
+ <div class="card2" id="" >
+        <div style="text-align: center;" class="" id="contactinfo">
+      <h2 style="color:red; font-size:20px;">Contact Info:</h2>
+      <p  style="font-size:20px; color:black;" >vincentmuya13@gmail.com</p>
+      <a href="https://github.com/vincentmuya" target="_blank"><p  style="color:black; font-size:20px;">Github profile </p></a>
+      <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:black; font-size:20px;">Linked in</p></a>
     </div>
   <!-- Modal -->
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -136,74 +139,9 @@
 </div>
 
 </div>
+      </div>
 </body>
-<style media="screen">
-  body{
-    background-color:black;
-  }
 
-  .modal-body {
-    position: relative;
-    padding: 0px;
-}
-.modal-content{
-   right:400px;
-   }
-  h1{
-    text-align: center;
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    font-size: 50px;
-  }
-  .btn{
-    font-size: 15px;
-    margin: 20px;
-  }
-  p,h2{
-    color: white;
-    font-size: 18px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  h3{
-    font-size: 25px;
-    color: white;
-  }
-  .projects{
-    text-align: center;
-    font-size: 25px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  h2, #contactinfo.a{
-    font-size: 20px;
-  }
-  .card{
-  margin-bottom:10px;
-  }
-.card-body{
-background-color:black;
-}
-.zoom{
-background-color:black;
-}
-@media screen and (max-width: 650px) {
-h1{
-font-size: 45px;
-}
-.container {
-  padding-left: 55px;
-}
- .card{
-right:20px;
-}
-button{
- margin-left: 15px;
-}
-.modal-content{
-margin-top:350px;
-left:10px;
-}
-}
-</style>
 {%endblock%}
 {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
