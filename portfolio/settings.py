@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'muya',
     'bootstrap4',
+    'bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfolio',
-        'USER': 'muya',
-        'PASSWORD': '12345'
+        'USER': 'vincent',
+        'PASSWORD': '123456'
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=500)

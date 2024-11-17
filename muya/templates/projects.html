@@ -1,4 +1,4 @@
-{%extends 'base.html'%} {%load static%} {%block content%} {% load bootstrap4 %}
+{%extends 'base.html'%} {%load static%} {%block content%} {% load bootstrap5 %}
 <head>
     <link rel="icon" href="static/img/me.jpg" type="image/gif" sizes="16x16">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -17,21 +17,25 @@
 <h3 class="projects">A sample of my projects:</h3>
   <div class="row">
     <div class="col-sm">
-    <div class="card" style="width: 19rem;">
+    <div class="card" style="width: 19rem;border: dotted;">
       <a href="http://littleeinsteinsea.com/" target="_blank">
         <img class="card-img-top" src="/static/img/lit.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
         <h3 class="card-title"> <strong>Little Einsteins</strong></h3>
         <p class="card-text">A website about the school Little Einsteins where students can enroll and other features included too.</p>
         <div class="row">
+            <div class="col-md-6">
           <a href="https://github.com/vincentmuya/Little-Einsteins" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <a href="http://littleeinsteinsea.com" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+          </div>
+                <div class="col-md-6">
+        <a href="http://littleeinsteinsea.com" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
         </div>
       </div>
     </div>
     </div>
     <div class="col-sm">
-          <div class="card" style="width: 19rem;">
+          <div class="card" style="width: 19rem;border: dotted;">
       <a href="https://cbm-international.co.ke/" target="_blank">
         <img class="card-img-top" src="/static/img/cbm.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -39,22 +43,30 @@
         <p class="card-text">An E-commerce platform that deals with electronics with mobile/digital payment options.
 </p>
         <div class="row">
+        <div class="col-md-6">
           <a href="https://github.com/vincentmuya/CBM" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <a href="https://cbm-international.co.ke/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
+        <div class="col-md-6">
+            <a href="https://cbm-international.co.ke/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
         </div>
       </div>
     </div>
     </div>
     <div class="col-sm">
-    <div class="card" style="width: 19rem;">
-      <a href="http://scorpuslogistics.com/" target="_blank">
-        <img class="card-img-top" src="/static/img/sky.png" alt=Card image cap height="200px" width="250px"></a>
+    <div class="card" style="width: 19rem;border: dotted;">
+      <a href="http://sherehemall.co.ke/" target="_blank">
+        <img class="card-img-top" src="/static/img/sherehemall.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
-        <h3 class="card-title"><strong>Sky Forwarder International Cargo</strong></h3>
-        <p class="card-text">A web app where a user can track their shipments status and progress.</p>
+        <h3 class="card-title"><strong>ShereheMall</strong></h3>
+        <p class="card-text">A Platform where a users can book get intouch with vendors and vendors can post the services they are offering.</p>
         <div class="row">
-          <a href="https://github.com/vincentmuya/cargo" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <a href="http://scorpuslogistics.com/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        <div class="col-md-6">
+          <a href="https://github.com/Sherehemall/Sherehemall.Com" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+          </div>
+        <div class="col-md-6">
+            <a href="http://sherehemall.co.ke/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
         </div>
       </div>
     </div>
@@ -62,67 +74,74 @@
   </div>
     <div class="row">
     <div class="col-sm">
-        <div class="card" style="width: 19rem;">
-<a href="#" class="zoom" data-toggle="modal" data-target="#lightbox"><img src="/static/img/pos 1.png" alt="USSD" height="200px" width="250px">
-  <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span></a>
-  <div class="card-body">
-        <h3 class="card-title"><strong>OnLine POS</strong></h3>
-        <p class="card-text">An online POS System<br>with different features</p>
+    <div class="card" style="width: 19rem;border: dotted;">
+      <a href="http://kenya1.co.ke/" target="_blank">
+        <img class="card-img-top" src="/static/img/kenya1.png" alt=Card image cap height="200px" width="250px"></a>
+      <div class="card-body">
+        <h3 class="card-title"><strong>Kenya1</strong></h3>
+        <p class="card-text">A web application which contains mini-applications frequently used.</p>
         <div class="row">
-          <a href="https://github.com/vincentmuya/Auto_log" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-            <button class="btn btn-warning" type="button" name="button" >
-              <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
-                  <img src="/static/img/nkb.png" alt="nkb" height="0px" width="0px">
-                  <span class="overlay">Preview<i class="glyphicon glyphicon-fullscreen"></i></span>
-              </a>
-            </button>
+        <div class="col-md-6">
+          <a href="https://github.com/vincentmuya/giged" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
+          </div>
+        <div class="col-md-6">
+            <a href="http://kenya1.co.ke/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+        </div>
         </div>
       </div>
     </div>
   </div>
 
     <div class="col-sm">
-     <div class="card" style="width: 19rem;">
+     <div class="card" style="width: 19rem;border: dotted;">
       <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><img class="card-img-top" src="/static/img/pigdice.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
         <h3 class="card-title"><strong>Pig Dice</strong></h3>
         <p class="card-text">A Javascript dice game where users compete to finish the game.</p>
         <div class="row">
+            <div class="col-md-6">
           <a href="https://github.com/vincentmuya/Pig-dice" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+          </div>
+            <div class="col-md-6">
+            <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><button class="btn btn-info" type="button" name="button">Deployed link</button></a>
+            </div>
         </div>
       </div>
     </div>
     </div>
 
     <div class="col-sm">
-<div class="card" style="width: 19rem;">
-<a href="#" class="zoom" data-toggle="modal" data-target="#lightbox"><img src="/static/img/USSD.png" alt="..." height="200px" width="250px">
+<div class="card" style="width: 19rem;border: dotted;">
+<a href="#" class="zoom" ><img src="/static/img/USSD.png" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" height="200px" width="250px">
   <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span></a>
   <div class="card-body">
         <h3 class="card-title"><strong>USSD Payment</strong></h3>
         <p class="card-text">A USSD platform for paying<br>fare with mobile money</p>
         <div class="row">
-          <a href="https://github.com/vincentmuya/tickets" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button></a>
-          <button class="btn btn-warning" type="button" name="button" >
-            <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
-                <img src="/static/img/USSD.png" alt="USSD" height="0px" width="0px">
-                <span class="overlay">Preview<i class="glyphicon glyphicon-fullscreen"></i></span>
-            </a>
-          </button>
+            <div class="col-md-6">
+          <a href="https://github.com/vincentmuya/tickets" target="_blank"><button class="btn btn-success" type="button" name="button">Github link</button>
+          </a>
+            </div>
+            <div class="col-md-6">
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Preview
+            </button>
+            </div>
         </div>
       </div>
     </div>
     </div>
 
   </div>
- <div class="card2" id="" >
+ <div class="card2" id="" style="border:dotted; border-radius:20px;">
         <div style="text-align: center;" class="" id="contactinfo">
       <h2 style="color:red; font-size:20px;">Contact Info:</h2>
       <p  style="font-size:20px; color:black;" >vincentmuya13@gmail.com</p>
       <a href="https://github.com/vincentmuya" target="_blank"><p  style="color:black; font-size:20px;">Github profile </p></a>
       <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:black; font-size:20px;">Linked in</p></a>
     </div>
+     </div>
+
   <!-- Modal -->
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog">
@@ -132,12 +151,28 @@
 <h3 class="modal-title" id="myModalLabel" style= "color:black; text-align:center;">Preview</h3>
 </div>
   <div class="modal-body">
-      <img src="" alt="" />
+      <img src="/static/img/USSD.png" alt="" />
   </div>
 </div>
 </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">USSD Payment  |</h5>
+      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Github link</button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="/static/img/USSD.png" alt="USSD">
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
 </div>
       </div>
 </body>
