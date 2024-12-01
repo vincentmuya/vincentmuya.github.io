@@ -27,7 +27,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="" />
+    <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muya/templates/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/skills.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/projects.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +99,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
