@@ -33,6 +33,42 @@ def contact(request):
         form = ContactForm()
     return render(request, 'contact.html', {'form':form})
 
+def chatbot_response(request):
+    user_message = request.GET.get('message', '').lower()
+
+    if "skills" in user_message:
+        response = "I specialize in web development, Python, Django, JavaScript, APIs, USSD, Check out more of my skills in the 'Skills' section of my portfolio."
+    elif "projects" in user_message:
+        response = "I have developed a number of projects from E-commerce to USSD and SMS platforms. Check out my recent projects in the 'Projects' section of my portfolio."
+    elif "how long" in user_message or "coding" in user_message or "start" in user_message or "begin" in user_message:
+        response = "I've been coding for over 5 years, starting with HTML, CSS and JavaScript and then expanding my expertise over time."
+    elif "inspired" in user_message or "inspire" in user_message or "become a developer" in user_message:
+        response = "My passion for problem-solving and creating useful applications inspired me to become a developer. There is also the fact I was a taxi driver and when the online taxi services were launched causing a rift from other taxi services. I got intrigued with the technical workings of software and by a couple of months I had enrolled in a coding institution"
+    elif "freelance" in user_message:
+        response = "Yes, I take on freelance projects when I can! If you'd like or need help with a project, feel free to contact me through the 'Contact' section."
+    elif "contract" in user_message:
+        response = "Yes, I take on contracts projects when I can! If you'd like or need help with a project, feel free to contact me through the 'Contact' section."
+    elif "employment" in user_message:
+        response = "I am open to employment! Feel free to contact me through the 'Contact' section."
+    elif "employed" in user_message:
+        response = "I am open to employment! Feel free to contact me through the 'Contact' section."
+    elif "tools" in user_message or "frameworks" in user_message or "framework" in user_message:
+        response = "I regularly work with Django, JavaScript, Bootstrap, PostgreSQL, and APIs. Check out more of my skills in the 'Skills' section of my portfolio."
+    elif "favorite project" in user_message or "favorite" in user_message:
+        response = "One of my favorite projects is Sherehemall. It was exciting because I used most of my for front-end and back-end skills. You can check it out in the 'Projects' section!"
+    elif "future goals" in user_message or "developer goals" in user_message or "goals" in user_message or "goal" in user_message:
+        response = "I aim to keep improving my skills, work on impactful projects, and learn new technologies like AI and machine learning."
+    elif "mentorship" in user_message or "training" in user_message:
+        response = "I enjoy helping others learn to code! While I don't currently offer structured mentorship programs, I'm happy to answer questions and provide guidance."
+    elif "resume" in user_message or "cv" in user_message or "curriculum vitae" in user_message:
+        response = "Sure! You can have my resume. Contact me through the 'Contact' section and I will send it to you."
+    elif "hobbies" in user_message or "outside of coding" in user_message:
+        response = "I enjoy taking walks, exploring new tech, and contributing to open-source projects."
+    else:
+        response = "I'm here to help! Ask me about my skills, projects, or anything else."
+
+    return JsonResponse({"response": response})
+
 def auto_reply(request):
     # Your Twilio API credentials
     account_sid = 'ACd1e08c8eafd7f15f41ce3d7dd3af0d92'

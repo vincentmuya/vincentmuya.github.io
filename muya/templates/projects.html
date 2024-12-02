@@ -145,6 +145,14 @@
     </div>
      </div>
 
+      <div id="chatbot-container">
+        <h6>I'm here to help! Ask me about my skills, projects, or anything else.</h6>
+        <hr>
+    <div id="chatbot-messages" style="height: 200px; overflow-y: auto; margin-bottom: 10px;"></div>
+    <input id="chatbot-input" type="text" placeholder="Type a message..." style="width: calc(100% - 50px); padding: 5px;">
+    <button id="chatbot-send" style="width: 40px; margin-left: 5px;">Send</button>
+    </div>
+
   <!-- Modal -->
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog">
@@ -179,6 +187,47 @@
 </div>
       </div>
 </body>
+<style>
+#chatbot-container {
+font-family: Arial, sans-serif;
+font-size: 14px;
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 300px;
+border: dotted;
+border-radius: 8px;
+background: #fff;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#chatbot-input {
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+#chatbot-send {
+background: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+#chatbot-send:hover {
+background: #0056b3;
+}
+@media screen and (max-width: 650px) {
+#chatbot-container {
+position: static;
+width: 300px;
+margin-left: 0%;
+border: dotted;
+border-radius: 8px;
+background: #fff;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+}
+</style>
 
 {%endblock%}
 {% block scripts %}
@@ -205,6 +254,26 @@
       $lightbox.find('.modal-dialog').css({'width': $img.width()});
       $lightbox.find('.close').removeClass('hidden');
   });
+});
+
+document.getElementById('chatbot-send').addEventListener('click', function() {
+    const inputField = document.getElementById('chatbot-input');
+    const userMessage = inputField.value.trim();
+    if (userMessage) {
+        const messagesContainer = document.getElementById('chatbot-messages');
+        const userBubble = `<div style="text-align: right; margin: 5px;"><span style="background: #007bff; color: #fff; padding: 5px 10px; border-radius: 10px;">${userMessage}</span></div>`;
+        messagesContainer.innerHTML += userBubble;
+        inputField.value = '';
+
+        // Fetch chatbot response
+        fetch(`/chatbot-response/?message=${encodeURIComponent(userMessage)}`)
+            .then(response => response.json())
+            .then(data => {
+                const botBubble = `<div style="text-align: left; margin: 5px;"><span style="background: #f1f1f1; padding: 5px 10px; border-radius: 10px;">${data.response}</span></div>`;
+                messagesContainer.innerHTML += botBubble;
+                messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto-scroll
+            });
+    }
 });
    </script>
    {% endblock %}
