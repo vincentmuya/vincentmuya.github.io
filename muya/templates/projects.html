@@ -18,7 +18,7 @@
       <br>
   <div class="row">
     <div class="col-sm">
-            <div class="card" style="width: 19rem;border: dotted;">
+            <div class="card" style="width: 19rem;border: dotted; position: static;">
       <a href="http://sherehemall.co.ke/" target="_blank">
         <img class="card-img-top" src="/static/img/shermall.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -37,7 +37,7 @@
 
     </div>
     <div class="col-sm">
-    <div class="card" style="width: 19rem;border: dotted;">
+    <div class="card" style="width: 19rem;border: dotted;position: static;">
       <a href="http://littleeinsteinsea.com/" target="_blank">
         <img class="card-img-top" src="/static/img/lit.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -55,7 +55,7 @@
     </div>
     </div>
     <div class="col-sm">
-                  <div class="card" style="width: 19rem;border: dotted;">
+                  <div class="card" style="width: 19rem;border: dotted; position: static;">
       <a href="https://cbm-international.co.ke/" target="_blank">
         <img class="card-img-top" src="/static/img/cbm.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -77,7 +77,7 @@
   </div>
     <div class="row">
     <div class="col-sm">
-    <div class="card" style="width: 19rem;border: dotted;">
+    <div class="card" style="width: 19rem;border: dotted;position: static;">
       <a href="http://kenya1.co.ke/" target="_blank">
         <img class="card-img-top" src="/static/img/kenya1.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
@@ -96,7 +96,7 @@
   </div>
 
     <div class="col-sm">
-     <div class="card" style="width: 19rem;border: dotted;">
+     <div class="card" style="width: 19rem;border: dotted;position: static;">
       <a href="https://vincentmuya.github.io/Pig-dice/" target="_blank"><img class="card-img-top" src="/static/img/pigdice.png" alt=Card image cap height="200px" width="250px"></a>
       <div class="card-body">
         <h3 class="card-title"><strong>Pig Dice</strong></h3>
@@ -114,7 +114,7 @@
     </div>
 
     <div class="col-sm">
-<div class="card" style="width: 19rem;border: dotted;">
+<div class="card" style="width: 19rem;border: dotted;position: static;">
 <a href="#" class="zoom" ><img src="/static/img/USSD.png" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" height="200px" width="250px">
   <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span></a>
   <div class="card-body">
@@ -136,6 +136,7 @@
     </div>
 
   </div>
+      <br>
  <div class="card2" id="" style="border:dotted; border-radius:20px;">
         <div style="text-align: center;" class="" id="contactinfo">
       <h2 style="color:red; font-size:20px;">Contact Info:</h2>
@@ -144,9 +145,9 @@
       <a href="https://www.linkedin.com/in/vincent-muya-8a759b150/" target="_blank"><p style="color:black; font-size:20px;">Linked in</p></a>
     </div>
      </div>
-
+        <br>
       <div id="chatbot-container">
-        <h6>I'm here to help! Ask me about my skills, projects, or anything else.</h6>
+        <h6>Hi, I'm here to help! Ask me about my skills, projects, or anything else.</h6>
         <hr>
     <div id="chatbot-messages" style="height: 200px; overflow-y: auto; margin-bottom: 10px;"></div>
     <input id="chatbot-input" type="text" placeholder="Type a message..." style="width: calc(100% - 50px); padding: 5px;">
@@ -219,7 +220,7 @@ background: #0056b3;
 #chatbot-container {
 position: static;
 width: 300px;
-margin-left: 0%;
+margin-left: -5%;
 border: dotted;
 border-radius: 8px;
 background: #fff;
@@ -235,27 +236,6 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
      {% bootstrap_javascript %}
   <!-- Javascript for each modal containing a different pic. This code was written so that you don't have to write multiple modal divs -->
    <script>
-   $(document).ready(function() {
-  var $lightbox = $('#lightbox');
-  $('[data-target="#lightbox"]').on('click', function(event) {
-      var $img = $(this).find('img'),
-          src = $img.attr('src'),
-          alt = $img.attr('alt'),
-          css = {
-              'maxWidth': $(window).width() - 100,
-              'maxHeight': $(window).height() - 100
-          };
-      $lightbox.find('img').attr('src', src);
-      $lightbox.find('img').attr('alt', alt);
-      $lightbox.find('img').css(css);
-  });
-  $lightbox.on('shown.bs.modal', function (e) {
-      var $img = $lightbox.find('img');
-      $lightbox.find('.modal-dialog').css({'width': $img.width()});
-      $lightbox.find('.close').removeClass('hidden');
-  });
-});
-
 document.getElementById('chatbot-send').addEventListener('click', function() {
     const inputField = document.getElementById('chatbot-input');
     const userMessage = inputField.value.trim();
