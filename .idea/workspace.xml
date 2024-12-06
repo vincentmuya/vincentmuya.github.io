@@ -27,14 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/muya/templates/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/muya/templates/skills.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/projects.css" afterDir="false" />
-    </list>
+    <list default="true" id="d5086313-ae87-41dd-878c-f07b77adb85a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

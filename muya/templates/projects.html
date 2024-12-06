@@ -146,13 +146,18 @@
     </div>
      </div>
         <br>
-      <div id="chatbot-container">
-        <h6>Hi, I'm here to help! Ask me about my skills, projects, or anything else.</h6>
-        <hr>
-    <div id="chatbot-messages" style="height: 200px; overflow-y: auto; margin-bottom: 10px;"></div>
-    <input id="chatbot-input" type="text" placeholder="Type a message..." style="width: calc(100% - 50px); padding: 5px;">
-    <button id="chatbot-send" style="width: 40px; margin-left: 5px;">Send</button>
-    </div>
+        <div id="chatbot-wrapper" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+            <button id="chat-icon" style="background-color: red; color: #fff; border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                💬
+            </button>
+            <div id="chatbot-container" style="display: none; position: absolute; bottom: 60px; right: 0; width: 300px; background-color: #fff; border:dotted; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 10px;">
+                <h6 style="background: black; color:white; padding: 5px; border-radius: 10px;">Hi, I'm here to help! Ask me about my skills, projects, or anything else.</h6>
+                <hr>
+                <div id="chatbot-messages" style="height: 200px; overflow-y: auto; margin-bottom: 10px;"></div>
+                <input id="chatbot-input" type="text" placeholder="Type a message..." style="width: calc(100% - 50px); padding: 5px;">
+                <button id="chatbot-send" style="width: 40px; margin-left: 5px;">Send</button>
+            </div>
+        </div>
 
   <!-- Modal -->
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -236,24 +241,35 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
      {% bootstrap_javascript %}
   <!-- Javascript for each modal containing a different pic. This code was written so that you don't have to write multiple modal divs -->
    <script>
-document.getElementById('chatbot-send').addEventListener('click', function() {
-    const inputField = document.getElementById('chatbot-input');
-    const userMessage = inputField.value.trim();
-    if (userMessage) {
-        const messagesContainer = document.getElementById('chatbot-messages');
-        const userBubble = `<div style="text-align: right; margin: 5px;"><span style="background: #007bff; color: #fff; padding: 5px 10px; border-radius: 10px;">${userMessage}</span></div>`;
-        messagesContainer.innerHTML += userBubble;
-        inputField.value = '';
+     document.getElementById('chat-icon').addEventListener('click', function () {
+         const chatbotContainer = document.getElementById('chatbot-container');
+         const isVisible = chatbotContainer.style.display === 'block';
 
-        // Fetch chatbot response
-        fetch(`/chatbot-response/?message=${encodeURIComponent(userMessage)}`)
-            .then(response => response.json())
-            .then(data => {
-                const botBubble = `<div style="text-align: left; margin: 5px;"><span style="background: #f1f1f1; padding: 5px 10px; border-radius: 10px;">${data.response}</span></div>`;
-                messagesContainer.innerHTML += botBubble;
-                messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto-scroll
-            });
-    }
-});
+         if (isVisible) {
+             chatbotContainer.style.display = 'none';
+         } else {
+             chatbotContainer.style.display = 'block';
+         }
+     });
+
+     document.getElementById('chatbot-send').addEventListener('click', function() {
+         const inputField = document.getElementById('chatbot-input');
+         const userMessage = inputField.value.trim();
+         if (userMessage) {
+             const messagesContainer = document.getElementById('chatbot-messages');
+             const userBubble = `<div style="text-align: right; margin: 5px;"><span style="background: #007bff; color: #fff; padding: 5px 10px; border-radius: 10px;">${userMessage}</span></div>`;
+             messagesContainer.innerHTML += userBubble;
+             inputField.value = '';
+
+             // Fetch chatbot response
+             fetch(`/chatbot-response/?message=${encodeURIComponent(userMessage)}`)
+                 .then(response => response.json())
+                 .then(data => {
+                     const botBubble = `<div style="text-align: left; margin: 5px;"><span style="background: #f1f1f1; padding: 5px 10px; border-radius: 10px;">${data.response}</span></div>`;
+                     messagesContainer.innerHTML += botBubble;
+                     messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto-scroll
+                 });
+         }
+     });
    </script>
    {% endblock %}
